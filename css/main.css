@@ -1,0 +1,318 @@
+/* Inserta tu codigo aqui */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Open sans', sans-serif;
+	width: 100%;
+	height: auto;
+	background-color: #2D2735;
+}
+header{
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	color: #fff;
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+header img{
+	width: 80%;
+	height: 60px;
+	float: left;
+}
+header .row{
+	display: table;
+}
+section {
+	width: 100%;
+
+}
+section .row{
+	width: 100%;
+	height: 280px;
+}
+
+
+/*MENU*/
+
+#menu-bar{
+	display: none;
+}
+header label {
+	float: right;
+	font-size: 28px;
+	margin: 6px 0;
+	cursor: pointer;
+}
+.menu {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background:rgba(51,51,51,0.9);
+	transition: all 0.5s;
+	transform: translateX(-100%);
+}
+.menu a{
+	display: block;
+	color: #fff;
+	height: 50px;
+	text-decoration: none;
+	padding: 15px;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.menu a:hover{
+	background: rgba(255,255,255,0.3);
+}
+#menu-bar:checked ~ .menu {
+		transform: translateX(0%);
+	}
+
+/*SECTION PRINCIPAL*/
+
+.principal {
+	width: 100%;
+	padding-bottom: 2%;
+	padding-top: 5%;
+	background-color: #2D2735;
+	position: relative;
+}
+.principal img{
+	width: 85%;
+	height: 250px;
+	position: absolute;
+	left: 5%;
+	top: 15%;
+}
+.principal .container{
+	width: 100%;
+}
+.subtitulo{
+	width: 74%;
+	height: 200px;
+	background-color: black;
+	color: white;
+	position: absolute;
+	top: 23%;
+	left: 10%;
+	text-transform: traslateX(-50%) traslateY(-50%);
+	text-align: center;
+	padding-top: 3%
+}
+.subtitulo span{
+	font-family: 'Courgette';
+	font-size: 4em;
+	color: #F6B96A;
+}
+.subtitulo p{
+	font-size: 12px;
+}
+/*SECTION TRES COLUnMAS*/
+.trescolumnas {
+	width: 100%;
+	height: 900px;
+	padding-bottom: 2%;
+	padding-top: 5%;
+	background-color: #2D2735;
+/*	position: absolute;*/
+}
+.trescolumnas .flor{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: #2D2735;
+/*	position: relative;*/
+	left: 3%;
+
+}
+.trescolumnas figcaption {
+	background-color: black;
+	color: white;
+	font-size: 1em;
+	height: 280px;
+}
+figcaption span {
+	font-family: 'Courgette';
+	color: #F6B96A;
+	font-size: 1.3em;
+}
+figcaption p {
+	font-size: 0.8em;
+}
+.trescolumnas img{
+	width: 100%;
+	height: 200px;
+}
+.trescolumnas .container{
+	width: 100%;
+}
+
+/*SECTION DOS COLUMNAS*/
+
+.doscolunmas {
+	width: 100%;
+	height: 900px;
+	padding-bottom: 2%;
+	padding-top: 5%;
+	background-color: #2D2735;
+
+}
+.doscolunmas .paco{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: #2D2735;
+	position: relative;
+	left: 1%;
+}
+.doscolunmas .flores{
+	display: none;
+}
+.doscolunmas figcaption {
+	background-color: black;
+	color: white;
+	font-size: 1em;
+	height: 400px;
+}
+figcaption span {
+	font-family: 'Courgette';
+	color: #F6B96A;
+	font-size: 1.3em;
+}
+figcaption p {
+	font-size: 0.8em;
+}
+.doscolunmas img{
+	width: 100%;
+	height: 200px;
+}
+.doscolunmas iframe{
+	width: 100%;
+	height: 200px;
+}
+.doscolunmas .container{
+	width: 100%;
+}
+
+
+/*creacon del footer*/
+footer {
+	width: 100%;
+	height:60px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	z-index: 100;
+
+}
+footer p{
+		padding-top: 2%;
+}
+footer .container{
+	width: 100%;
+}
+/* Responsive */
+
+@media screen and (min-width : 920px) {
+.menu {
+	position: static;
+	width: auto;
+	height: auto;
+	transform: translateX(0%);
+	float: right;
+	display:flex;*/
+	}
+header img{
+	width: 50%;
+	
+	}
+.principal {
+		width: 300px;
+		padding-bottom: 2%;
+		padding-top: 5%;
+		background-color: #2D2735;
+		position: relative;
+	}
+	.principal img{
+		width: 1000px;
+		height: 550px;
+		position: absolute;
+		left: 55%;
+		top: 15%;
+	}
+	.principal .container{
+		width: 100%;
+	}
+	.subtitulo{
+		width: 800px;
+		height: 400px;
+		background-color: black;
+		color: white;
+		position: absolute;
+		top: 33%;
+		left: 90%;
+		text-transform: traslateX(-50%) traslateY(-50%);
+		text-align: center;
+		padding-top: 5%
+	}
+	.subtitulo span{
+		font-family: 'Courgette';
+		font-size: 6em;
+		color: #F6B96A;
+	}
+	.subtitulo p{
+		font-size: 20px;
+		padding-top: 4%;
+}
+.trescolumnas {
+	width: 200px;
+	height: 900px;
+	padding-bottom: 2%;
+	padding-top: 5%;
+	background-color: #2D2735;
+	float: 
+}
+.trescolumnas .flor{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: #2D2735;
+
+	left: 3%;
+
+}
+.trescolumnas figcaption {
+	background-color: black;
+	color: white;
+	font-size: 1em;
+	height: 280px;
+}
+figcaption span {
+	font-family: 'Courgette';
+	color: #F6B96A;
+	font-size: 1.3em;
+}
+figcaption p {
+	font-size: 0.8em;
+}
+.trescolumnas img{
+	width: 100%;
+	height: 200px;
+}
+.trescolumnas .container{
+	width: 100%;
+}
+
+
+@media screen and (min-width: 600px) {
+	header label {
+		display: none;
+	}
+	
+}
